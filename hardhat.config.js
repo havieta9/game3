@@ -11,7 +11,7 @@ const etherscanKeys = require("./etherscan")
 const AVAX_URL = fs.readFileSync(".avaxUrl").toString().trim();
 
 module.exports = {
-  defaultNetwork: "matic",
+  defaultNetwork: "bscTest",
   networks: {
     hardhat: {
     },
@@ -36,7 +36,7 @@ module.exports = {
       accounts: [privateKey],	
     },
     bscTest: {
-    url: moralisNodes?.bscTestnet || "https://data-seed-prebsc-1-s1.binance.org:8545",
+    url: "https://data-seed-prebsc-1-s1.binance.org:8545",
     accounts: [privateKey],	
     },
     avax: {
