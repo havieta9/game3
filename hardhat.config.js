@@ -57,6 +57,7 @@ module.exports = {
       moonriver: moonScanApi,
       polygon: polygonScanApi,
       bsc: etherscanKeys.bsc,
+      bscTest: etherscanKeys.bscTest,
       avalanche: etherscanKeys.avax,
       opera: etherscanKeys.ftm,
     }
