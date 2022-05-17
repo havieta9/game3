@@ -36,7 +36,7 @@ module.exports = {
       accounts: [privateKey],	
     },
     bscTest: {
-    url: moralisNodes?.bscTestnet || "https://bsc-dataseed2.binance.org",
+    url: moralisNodes?.bscTestnet || "https://data-seed-prebsc-1-s1.binance.org:8545",
     accounts: [privateKey],	
     },
     avax: {
