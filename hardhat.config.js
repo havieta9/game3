@@ -13,53 +13,19 @@ const AVAX_URL = fs.readFileSync(".avaxUrl").toString().trim();
 module.exports = {
   defaultNetwork: "bscTest",
   networks: {
-    hardhat: {
-    },
-    mumbai: {
-      url: "https://rpc-mumbai.maticvigil.com",
-      accounts: [privateKey]
-    },
-    matic: {
-      url: ALCHEMY_URL,
-      accounts: [privateKey],
-    },
-    moonriver: {
-      url: "https://moonriver.api.onfinality.io/public",
-      accounts: [privateKey],
-    },
-    moonbeam: {
-      url: "https://rpc.api.moonbeam.network",
-      accounts: [privateKey],	
-    },
     bsc: {
       url: moralisNodes?.bscMainnet || "https://bsc-dataseed2.binance.org",
       accounts: [privateKey],	
     },
     bscTest: {
-    url: "https://data-seed-prebsc-1-s1.binance.org:8545",
+    url: moralisNodes?.bscTestnet || "https://data-seed-prebsc-1-s1.binance.org",
     accounts: [privateKey],	
-    },
-    avax: {
-      url: moralisNodes?.avaxMainnet || AVAX_URL,
-      accounts: [privateKey],	
-    },
-    ftm: {
-      url: moralisNodes?.ftmMainnet || "https://rpc2.fantom.network	",
-      accounts: [privateKey],	
-    },
-    boba_rinkeby: {
-      url: "https://rinkeby.boba.network",
-      accounts: [privateKey],
     },
   },
   etherscan: {
     apiKey: {
-      moonriver: moonScanApi,
-      polygon: polygonScanApi,
       bsc: etherscanKeys.bsc,
       bscTest: etherscanKeys.bscTest,
-      avalanche: etherscanKeys.avax,
-      opera: etherscanKeys.ftm,
     }
   },
   solidity: {
