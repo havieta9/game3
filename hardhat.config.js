@@ -35,10 +35,10 @@ module.exports = {
       url: moralisNodes?.bscMainnet || "https://bsc-dataseed2.binance.org",
       accounts: [privateKey],	
     },
-    // bscTest: {
-    //   url: moralisNodes?.bscTestnet || "https://bsc-dataseed2.binance.org",
-    //   accounts: [privateKey],	
-    // },
+    bscTest: {
+    url: moralisNodes?.bscTestnet || "https://bsc-dataseed2.binance.org",
+    accounts: [privateKey],	
+    },
     avax: {
       url: moralisNodes?.avaxMainnet || AVAX_URL,
       accounts: [privateKey],	
